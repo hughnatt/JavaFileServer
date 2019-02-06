@@ -131,6 +131,8 @@ public class MultiClient extends Thread {
 			System.out.println("An unhandled exception happened when trying to get the file, transfer failed.");
 		}
 
+		System.out.println("File " + filename +" retrieved");
+		
 		// Closing the server
 		try {
 			server.close();
