@@ -14,7 +14,7 @@ public class PerfsComparison {
 	
 	public static void main(String args[]) {
 		
-		System.out.println("Launch the server you want to test");
+		System.out.println("Launch the server you want to test before testing");
 		
 		MultiClient clients[] = new MultiClient[NCLIENTS];
 		
