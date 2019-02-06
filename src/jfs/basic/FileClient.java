@@ -77,7 +77,6 @@ public class FileClient {
 		Path p = Paths.get(filename);
 		filename = p.getFileName().toString(); 		
 		FileOutputStream file = new FileOutputStream(filename);
-		System.out.println("Création du fichier : " + filename);
 
 		// Receiving file chunk by chunk
 		byte buf[] = new byte[1024];

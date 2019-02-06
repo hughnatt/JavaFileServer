@@ -28,13 +28,15 @@ public class FileServer {
 		try {
 			port = Integer.parseInt(args[0]);
 		} catch (Exception e) {
-			System.out.println("Port not provided, using default port 4242");
+			System.out.println("[WARNING] Port not provided, using default port 4242");
+			port = 4242;
 		}
 		
 		try {
 			path = args[1];
 		} catch (Exception e) {
-			System.out.println("Default path for files not provided, using files/ directory");
+			System.out.println("[WARNING] Default path for files not provided, using files/ directory");
+			path = "files/";
 		}
 	}
 	
